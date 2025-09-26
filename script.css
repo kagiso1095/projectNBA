@@ -1,0 +1,209 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Navigation */
+  header {
+    background-color: #0055A4;
+    padding: 10px 20px;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  nav ul li a {
+    color: #c7de31;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav ul li a:hover {
+    color: #FF9900;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background-color: #0055A4;
+    color: #FFFFFF;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .hero-section h1 { font-size: 2.5em; margin-bottom: 10px; }
+  .hero-section p { font-size: 1.2em; margin-bottom: 20px; }
+  
+  /* CTA Button */
+  .cta-button {
+    background-color: #FF9900;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .cta-button:hover { background-color: #CC7700; }
+  
+  /* Services Section */
+  .services-section, .services-header, .services-list {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .service-grid, .services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .service-item {
+    width: 30%;
+    min-width: 250px;
+    text-align: center;
+  }
+  .service-item img { max-width: 100%; height: auto; }
+  
+  /* Testimonials Section */
+  .testimonials-section {
+    background-color: #F5F5F5;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .testimonial { margin: 20px; font-style: italic; }
+  
+  /* About Section */
+  .about-section, .mission-section, .team-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .mission-section { background-color: #F5F5F5; }
+  .team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .team-member {
+    width: 30%;
+    min-width: 200px;
+  }
+  .team-member img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  /* Portfolio Section */
+  .portfolio-header, .portfolio-grid {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .portfolio-item {
+    width: 30%;
+    min-width: 250px;
+    text-align: center;
+  }
+  .portfolio-item img { max-width: 100%; height: auto; }
+  
+  /* Blog Section */
+  .blog-header, .blog-posts {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .blog-post { margin-bottom: 20px; }
+  .blog-post img { max-width: 100%; height: auto; }
+  
+  /* Contact Section */
+  .contact-header, .contact-content {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .contact-form, .contact-details {
+    width: 45%;
+    min-width: 300px;
+  }
+  .contact-form form, .newsletter-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact-form input, .contact-form textarea, .newsletter-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .contact-form textarea { height: 150px; }
+  .contact-form button, .newsletter-form button {
+    background-color: #FF9900;
+    color: #FFFFFF;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .contact-form button:hover, .newsletter-form button:hover {
+    background-color: #CC7700;
+  }
+  .live-chat { padding: 20px; text-align: center; }
+  
+  /* Newsletter Section */
+  .newsletter-header, .newsletter-form {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  /* Footer */
+  .site-footer {
+    background-color: #333;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+  }
+  .site-footer a { color: #FF9900; }
+  .newsletter-footer { margin: 20px 0; }
+  .newsletter-footer form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .newsletter-footer input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .newsletter-footer button {
+    background-color: #FF9900;
+    color: #FFFFFF;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .newsletter-footer button:hover { background-color: #CC7700; }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .service-item, .team-member, .portfolio-item, .contact-form, .contact-details {
+      width: 100%;
+    }
+    nav ul { flex-direction: column; text-align: center; }
+  }

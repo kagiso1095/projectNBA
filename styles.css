@@ -1,0 +1,16 @@
+// Basic form submission handling (for demo purposes)
+document.addEventListener('DOMContentLoaded', () => {
+  const forms = document.querySelectorAll('#contact-form, #newsletter-form');
+  forms.forEach(form => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Form submitted! (This is a demo - integrate with WordPress plugins for actual functionality)');
+      form.reset();
+    });
+  });
+});
+
+// Live chat placeholder (replace with Tawk.to script in WordPress)
+document.querySelector('.live-chat')?.addEventListener('click', () => {
+  alert('Live chat clicked! (Add Tawk.to widget for actual chat)');
+});
